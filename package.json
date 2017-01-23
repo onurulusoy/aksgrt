@@ -1,6 +1,6 @@
 {
   "name": "Akbnk-Demo-Tests",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Akbnk Demo Test Framework",
   "author": "Onur Ulusoy",
   "dependencies": {
