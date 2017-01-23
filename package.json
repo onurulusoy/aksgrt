@@ -1,7 +1,7 @@
 {
-  "name": "VIO-E2E-Tests",
+  "name": "Akbnk-Demo-Tests",
   "version": "0.0.1",
-  "description": "VIO End to End Test Framework",
+  "description": "Akbnk Demo Test Framework",
   "author": "Onur Ulusoy",
   "dependencies": {
     "async": "^2.1.2",
