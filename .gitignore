@@ -1,0 +1,10 @@
+.gradle
+.classpath
+.project
+.settings/
+.factorypath
+.externalToolBuilders/
+log
+bin
+*~
+node_modules/
