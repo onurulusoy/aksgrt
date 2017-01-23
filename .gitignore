@@ -8,3 +8,5 @@ log
 bin
 *~
 node_modules/
+test/report/*.html
+test/report/*.json
