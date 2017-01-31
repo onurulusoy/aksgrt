@@ -1,0 +1,12 @@
+.gradle
+.classpath
+.project
+.settings/
+.factorypath
+.externalToolBuilders/
+log
+bin
+*~
+node_modules/
+test/report/*.html
+test/report/*.json

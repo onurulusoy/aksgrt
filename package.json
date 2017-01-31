@@ -1,7 +1,7 @@
 {
-  "name": "VIO-E2E-Tests",
-  "version": "0.0.1",
-  "description": "VIO End to End Test Framework",
+  "name": "Aksigorta-Demo-Tests",
+  "version": "0.0.2",
+  "description": "Aksigorta Demo Test Framework",
   "author": "Onur Ulusoy",
   "dependencies": {
     "async": "^2.1.2",

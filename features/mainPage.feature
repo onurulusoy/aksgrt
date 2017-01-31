@@ -1,25 +1,25 @@
 #encoding: UTF-8
-@mainPage_tests
+@Akbank_Demo_Suite
 Feature: Main Page Feature
   As a user of AKSigorta
-  I want to surf on main page
+  I want to check the main page
   So that I will check the main page items, links etc
 
   Background:
     Given I am on the aksigorta login page
 
-  @basicMainPage
+  @VerifyUyeIslemleriMusteri
   Scenario: Basic Main Page
     When I see "UyeIslemleri"
     Then I click "Musteri"
 
-  @clickAndWait
+  @VerifyYatirmciOlaylar
   Scenario: Click And Wait
     When I see "yatrmci"
     Then I click "yatrmci" button
     Then I should see "Olaylar" panel
 
-  @comboBoxItemCheck
+@VerifyAradigimSigortaCheckbox
   Scenario: Combo Box Item Check
     When I scroll to "AradigimSigorta"
     Then I click "jquery-selectbox-moreButton" button
