@@ -1,6 +1,8 @@
 // features/step_definitions/mainPage.js
 var seleniumWebdriver = require('selenium-webdriver');
 var async = require('async');
+var https = require('https');
+var request = require('sync-request');
 
 var By = seleniumWebdriver.By;
 
@@ -116,5 +118,23 @@ module.exports = function() {
 
     });
 
+
+    this.Then(/^I should see all images under "([^"]*)"$/, function(text) {
+        var xpath = '//*[@class="' + text + '"]/div/img'
+        promise = this.driver.findElements(By.xpath(xpath));
+        promise.then(function(imageElements) {
+            async.eachSeries(imageElements, function(imageElement, callback) {
+                imageElement.getAttribute("src").then(function(imageLink) {
+                    var res = request('GET', imageLink);
+                    assert.strictEqual(res.statusCode, 403);
+                    callback();
+                });
+            }, function(err) {
+                if (err) {
+                    console.error(err);
+                }
+            });
+        });
+    });
 
 };

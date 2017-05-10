@@ -19,7 +19,7 @@ Feature: Main Page Feature
     Then I click "yatrmci" button
     Then I should see "Olaylar" panel
 
-@VerifyAradigimSigortaCheckbox
+  @VerifyAradigimSigortaCheckbox
   Scenario: Combo Box Item Check
     When I scroll to "AradigimSigorta"
     Then I click "jquery-selectbox-moreButton" button
@@ -28,6 +28,10 @@ Feature: Main Page Feature
       |Evimi Kapsasın|
       |Aracımı Kapsasın|
       |İşimi Kapsasın|
+
+  @ImageCheck
+  Scenario: Image Check
+    Then I should see all images under "slide"
 
 # Class examples for "I see ..."
     # SiteIciArama, UyeIslemleri, yatrmci, iletsm, menu, AramaIslemleri, AradigimSigorta, footer etc.
